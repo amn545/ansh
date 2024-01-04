@@ -11,7 +11,8 @@ body{
     margin: 0 auto;
     width: 300px;
     height: 300px;
-    border: 0px solid skyblue;
+    background: transparent;
+    border: 0px solid orange ;
     border-radius: 50%;
     position: absolute;
     top: 25%;
@@ -20,44 +21,46 @@ body{
 }
 
  .one{
-    animation: circle 9s infinite linear;
-}
-
-.two{
-    animation: circle 8s infinite linear;
-}
-
-.three{
-    animation: circle 7s infinite linear;
-}
-
-.four{
-    animation: circle 6s infinite linear;
-}
-
-.five{
-    animation: circle 5s infinite linear;
-}
-
-.six{
     animation: circle 4s infinite linear;
 }
 
-.seven{
+.two{
     animation: circle 3s infinite linear;
 }
 
-.eight{
+.three{
     animation: circle 2s infinite linear;
 }
 
-@keyframes circle {
+.four{
+    animation: triangle 4s infinite linear;
+}
+
+.five{
+    animation: triangle 3s infinite linear;
+}
+
+.six{
+    animation: triangle 2s infinite linear;
+}
+
+@keyframes triangle {
     from{
         transform: scale(0);
     }
     to{
         transform: scale(6);
     }
+}
+
+@keyframes circle {
+    from{
+        transform: scale(6);
+    }
+    to{
+        transform: scale(0);
+    }
+   
 
     100%{
         filter: hue-rotate(360deg);
